@@ -55,7 +55,7 @@ class PDBAtom:
         else:
             return string
 
-# Obtained from axis.ipynb
+# Obtained from original_structure/axis.ipynb
 C_DILATED_A = np.array([993.60, 993.60, 0.00])
 C_CONSTRICTED_A = np.array([970.56, 970.56, 0.00])
 
