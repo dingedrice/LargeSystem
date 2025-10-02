@@ -108,8 +108,9 @@ def write_subunits(templfile, outfile, center, n):
                 if atom == "TER":
                     fout.write("TER\n")
                 else:
-                    atom.x, atom.y, atom.z = (np.array([atom.x, atom.y, atom.z]) - center)@R + center
-                    fout.write(str(atom) + '\n')
+                    new_atom = PDBAtom(str(atom))
+                    new_atom.x, new_atom.y, new_atom.z = (np.array([atom.x, atom.y, atom.z]) - center)@R + center
+                    fout.write(str(new_atom) + '\n')
             if k != n-1:
                 fout.write("TER\n")
         fout.write("END\n")
