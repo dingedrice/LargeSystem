@@ -1,0 +1,2 @@
+1. We build the dual basin SBM in the folder. This is for potential future use and also to generate the list of unique contacts, named `contact_DB_uniq_c.pkl` and `contact_DB_uniq_d.pkl` for constricted and dilated states, respectively.
+2. The [mmct](https://github.com/mellofariam/mmct) package from Matheus Mello is required to run `mm_dual_basin.ipynb`
