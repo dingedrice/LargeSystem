@@ -14,6 +14,7 @@
 4. `emin`
 
     Refine the structure with energy minimization to generate a symmetric unit. The strategy is similar to step 2.
+	P.S. The refined structures are stored under npc/ instead of npc/emin in this repo.
 
 5. `SBM`
 
