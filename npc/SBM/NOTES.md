@@ -1,3 +1,4 @@
 1. The structure after energy minimization was analyzed in the folder `../emin/` and the octamers for constricted and dilated structure (`constricted_reconstruct.pdb` and `dilated_reconstruct.pdb`) were generated. P.S. the generated `.pdb` files are relocated into `npc/` in the git repo. 
 2. The octamers were used to generate the AA and CA SBM on the aries cluster, stored in folder `constricted` and `dilated` under this folder.
 3. There are multiple large native angles (greater than 150) in the CA model. They may lead to linear conformations which cause problem for dihedral calculations. Plus, the contacts are not strictly symmetric due to numerical issues. These problems were addressed in `xml.ipynb`.
+4. Three files generated for the SBM will be used in the following analysis and simulations: `.gro`, `.top`, and `.xml`
