@@ -1,6 +1,6 @@
 '''
 This file is to calculate RMSD, Q, and COM of the NPC system.
-It uses the Maanalysis package instead of mdtraj for better memory efficiency.
+It uses the Mdanalysis package instead of mdtraj for better memory efficiency.
 The code is modified by Gemini from my old code using mdtraj.
 '''
 
