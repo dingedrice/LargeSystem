@@ -1,8 +1,8 @@
 4 simulations are performed. 
 
-- Near constricted
-- Dilated to constricted
-- Near dilated
-- Constricted to dilated
+- 2 X Near constricted
+- 2 X Near dilated
 
-`run.slurm` was submitted to HPC cluster followed by `run_follow.slurm`.
+`run.slurm` was submitted to HPC cluster.
+
+10 frames were then extracted as the initial states for the following downhill simulations

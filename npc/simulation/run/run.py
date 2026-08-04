@@ -42,8 +42,10 @@ sbm.saveFolder(f"{name}_{sim_index}")
 sbm.loadSystem(Grofile=sbm_grofile, Topfile=sbm_topfile, Xmlfile=sbm_xmlfile)
 
 sbm.createSimulation()
-sbm.loadCheckpoint(f"{name}_{sim_index}/smog.chk")
-#sbm.minimize(tolerance=1)
+try:
+    sbm.loadCheckpoint(f"{name}_{sim_index}/smog.chk")
+except:
+    sbm.minimize(tolerance=1)
 
-sbm.createReporters(trajectory=True, energies=True, energy_components=True, interval=10**5, checkpointInterval=10**6)
+sbm.createReporters(trajectory=True, energies=True, energy_components=True, interval=10**5, checkpointInterval=10**5)
 sbm.run(5*10**7, interval = 10**5)

@@ -9,16 +9,16 @@
 container=/home1/george/SMOGgit-OpenSMOGgit-MiChroM-MDtraj-Nov2024.sif
 
 # Run 1
-NAME=d; GPU=0; INDEX=0; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run_init.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
+NAME=d; GPU=0; INDEX=1; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
 
 # Run 2
-NAME=c; GPU=1; INDEX=0; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run_init.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
+NAME=d; GPU=1; INDEX=2; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
 
 # Run 3
-NAME=d2c; GPU=2; INDEX=0; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run_init.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
+NAME=c; GPU=2; INDEX=1; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
 
 # Run 4
-NAME=c2d; GPU=3; INDEX=0; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run_init.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
+NAME=c; GPU=3; INDEX=2; mkdir ${NAME}_${INDEX}; singularity exec $container python3 run.py $NAME $GPU $INDEX &> ${NAME}_${INDEX}/output.log &
 
 # this is important, to ensure the jobs all complete before the script exits.
 wait
