@@ -14,7 +14,7 @@
 4. `emin`
 
     Refine the structure with energy minimization to generate a symmetric unit. The strategy is similar to step 2.
-	P.S. The refined structures are stored under npc/ instead of npc/emin in this repo.
+    P.S. The refined structures are stored under npc/ instead of npc/emin in this repo.
 
 5. `SBM`
 
@@ -22,4 +22,8 @@
 
 6. `simulation`
 
-    Run the simulations with the final SBM. 
+    Benchmark the system with the final SBM, run the equilibration simulations and extract the conformations for the downhill simulations.
+
+7. `production_run`
+
+    Downhill simulations for the project.
