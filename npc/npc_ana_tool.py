@@ -1,6 +1,7 @@
+# Some global variables and functions for NPC analysis
 import pandas as pd
 import numpy as np
-from Contacts.Contacts import *
+from Contacts.Contacts import * # https://github.com/dingedrice/Contacts
 
 df_chain_info = pd.read_pickle("/home/ed31/Documents/LargeSystem/npc/template/chain_info.pkl")
 
